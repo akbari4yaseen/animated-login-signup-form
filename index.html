@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="autor" content="Yaseen Akbari" />
+    <title>Login | Signup</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/script.js"></script>
+  </head>
+  <body>
+    <main class="container">
+      <div class="text-title">
+        <div class="title login">Login Form</div>
+        <div class="title signup">Signup Form</div>
+      </div>
+      <div class="form-container">
+        <div class="slide-controls">
+          <input type="radio" id="login" name="slider" checked />
+          <input type="radio" id="signup" name="slider" />
+          <label for="login" class="slide login">Login</label>
+          <label for="signup" class="slide signup">Signup</label>
+          <div class="slide-tap"></div>
+        </div>
+        <div class="form-inner">
+          <form action="#" class="login">
+            <div class="field">
+              <input type="email" placeholder="Email Address" required />
+            </div>
+            <div class="field">
+              <input type="password" placeholder="Password" required />
+            </div>
+            <div class="password-link"><a href="#">Forgot Password?</a></div>
+            <div class="field">
+              <input type="submit" value="Login" />
+            </div>
+            <div class="signup-link">
+              Not a Member? <a href="#">Signup Now</a>
+            </div>
+          </form>
+          <!-- / Login Form -->
+          <form action="#" class="signup">
+            <div class="field">
+              <input type="email" placeholder="Email Address" required />
+            </div>
+            <div class="field">
+              <input type="password" placeholder="Password" required />
+            </div>
+            <div class="field">
+              <input type="password" placeholder="Confirm Password" required />
+            </div>
+            <div class="field">
+              <input type="submit" value="Signup" />
+            </div>
+            <!-- <div class="login-link">
+              Allready Have an Account? <a href="#">Login Now</a>
+            </div> -->
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

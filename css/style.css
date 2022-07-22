@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  background: -webkit-linear-gradient(
+    to right top,
+    #f252ad,
+    #e25abe,
+    #cf63cd,
+    #b86cda,
+    #9d74e3,
+    #7d85f2,
+    #5495fc,
+    #00a2ff,
+    #00baff,
+    #00cffe,
+    #00e1f4,
+    #67f2ea
+  );
+  background: linear-gradient(
+    to right top,
+    #f252ad,
+    #e25abe,
+    #cf63cd,
+    #b86cda,
+    #9d74e3,
+    #7d85f2,
+    #5495fc,
+    #00a2ff,
+    #00baff,
+    #00cffe,
+    #00e1f4,
+    #67f2ea
+  );
+}
+.container {
+  max-width: 24.375rem;
+  background: #fff;
+  padding: 1.875rem;
+  border-radius: 0.3125rem;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.container .text-title {
+  display: flex;
+  width: 200%;
+}
+.container .text-title .title {
+  width: 50%;
+  font-size: 2.1875rem;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.container .form-container {
+  width: 100%;
+  overflow: hidden;
+}
+.form-container .slide-controls {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 3.125rem;
+  overflow: hidden;
+  border-radius: 0.3125rem;
+  margin: 1.875rem 0 0.625rem 0;
+  justify-content: space-between;
+  border: 0.0625rem solid lightgray;
+}
+
+.slide-controls .slide {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 9;
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 3.12rem;
+  text-align: center;
+  transition: all 0.6s ease;
+}
+.slide-controls .signup {
+  color: #000;
+}
+
+.slide-controls .slide-tap {
+  position: absolute;
+  background: -webkit-linear-gradient(left, #727deb, #f252ad);
+  background: linear-gradient(left, #727deb, #f252ad);
+  height: 100%;
+  width: 50%;
+  left: 0;
+  z-index: 0;
+  border-radius: 0.3125rem;
+  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+input[type="radio"] {
+  display: none;
+}
+#signup:checked ~ .slide-tap {
+  left: 50%;
+}
+#signup:checked ~ .signup {
+  color: #fff;
+}
+#signup:checked ~ .login {
+  color: #000;
+}
+.form-container .form-inner {
+  display: flex;
+  width: 200%;
+}
+.form-container .form-inner form {
+  width: 50%;
+  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-inner form .field {
+  width: 100%;
+  height: 3.125rem;
+  margin-top: 1.25rem;
+}
+.form-inner form .field input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding-left: 0.9375rem;
+  font-size: 1.0625rem;
+  border-radius: 0.3125rem;
+  border: 0.0625rem solid lightgray;
+  border-bottom-width: 0.125rem;
+  transition: all 0.4s ease;
+}
+.form-inner form .field input:focus {
+  border-color: #f252ad;
+}
+.form-inner form .password-link {
+  margin-top: 0.3125rem;
+}
+
+.form-inner form .signup-link,
+.form-inner form .login-link {
+  margin-top: 1.875rem;
+  text-align: center;
+}
+.form-inner form .password-link a,
+.form-inner form .signup-link a {
+  text-decoration: none;
+  color: #727deb;
+}
+
+.form-inner form .password-link a:hover,
+.form-inner form .signup-link a:hover {
+  text-decoration: underline;
+}
+
+form .field input[type="submit"] {
+  background: -webkit-linear-gradient(left, #727deb, #f252ad);
+  background: linear-gradient(left, #727deb, #f252ad);
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 500;
+  padding-left: 0;
+  cursor: pointer;
+}
